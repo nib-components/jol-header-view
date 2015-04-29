@@ -1,0 +1,93 @@
+
+/* === Join: Header === */
+
+.jol-header {
+  position: relative;
+  height: 40px; /* give it a height so that the page doesn't jump when the sticky header is pulled out */
+  z-index: 10;
+}
+
+.jol-header__content.is-fixed {
+  position: fixed;
+  top: 0;
+}
+
+.jol-header__nav {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+/* === @ Desktop - side by side with border  === */
+
+@media (min-width: 60em) {
+
+  .jol-header__content {
+    margin-top: 10px;
+  }
+
+  .jol-header__content.is-fixed {
+    width: 960px;
+    margin-top: 0;
+  }
+
+  .jol-header__nav {
+    overflow: hidden;
+    height: 40px;
+    border: 2px solid #ccc;
+    background-color: #ccc;
+  }
+
+}
+
+/* === @ Tablet - on top of each other === */
+
+@media (max-width: 60em) {
+
+  .jol-header {
+    height: 80px; /* give it a height so that the page doesn't jump when the sticky header is pulled out */
+  }
+
+  .jol-header__content.is-fixed {
+    left: 0;
+    right: 0;
+  }
+
+  .jol-header-nav {
+    margin-top: -40px;
+  }
+
+  .jol-header-nav__item {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .jol-header-progress {
+    height: 40px;
+  }
+
+  .jol-header-progress__indicator {
+    height: 40px;
+  }
+
+  .jol-header-progress__indicator:after {
+    border-width: 20px 0 20px 10px !important;
+  }
+
+}
+
+/* === @ Mobile - on top of each other with scrollbars === */
+
+@media (max-width: 40em) {
+
+  .jol-header__content {
+    /*-webkit-overflow-scrolling: touch; *//* breaks ios */
+  }
+
+  .jol-header__nav {
+    overflow-x: scroll;
+  }
+
+}
+
+
