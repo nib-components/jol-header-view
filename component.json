@@ -4,11 +4,11 @@
   "scripts": ["view.js"],
   "styles": ["index.css"],
   "dependencies": {
-    "digitaledgeit/css-grid": "~1.1.4",
-    "digitaledgeit/js-view": "~0.1.8",
-    "nib-health-funds/view-mixins": "~0.1.0",
-    "nib-health-funds/sticky-header": "~1.0.0",
-    "nib-components/jol-header-nav-view": "~1.0.0",
-    "nib-components/jol-header-cart-view": "~0.2.0"
+    "digitaledgeit/css-grid": "^1.1.4",
+    "digitaledgeit/js-view": "^0.1.8",
+    "nib-health-funds/view-mixins": "^0.1.0",
+    "nib-health-funds/sticky-header": "^1.0.0",
+    "nib-components/jol-header-nav-view": "^1.0.0",
+    "nib-components/jol-header-cart-view": "^0.2.1"
   }
 }
