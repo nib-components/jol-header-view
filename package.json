@@ -1,0 +1,26 @@
+{
+  "name": "@nib-components/jol-header-view",
+  "version": "1.1.2",
+  "main": "view.js",
+  "main.css": "index.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nib-components/jol-header-view.git"
+  },
+  "dependencies": {
+    "sass-grid": "^1.1.4",
+    "digitaledgeit-view": "^0.1.8",
+    "@nib/view-mixins": "^0.1.0",
+    "@nib/sticky-header": "^1.0.0",
+    "@nib-components/jol-header-nav-view": "^1.0.1",
+    "@nib-components/jol-header-cart-view": "^0.2.1"
+  },
+  "browser": {
+    "grid": "sass-grid",
+    "view": "digitaledgeit-view",
+    "view-mixins": "@nib/view-mixins",
+    "sticky-header": "@nib/sticky-header",
+    "jol-header-nav-view": "@nib-components/jol-header-nav-view",
+    "jol-header-cart-view": "@nib-components/jol-header-cart-view"
+  }
+}
