@@ -15,6 +15,9 @@
 .jol-header__nav {
   box-sizing: border-box;
   width: 100%;
+
+  /* Hack to fix opacity/transition bug when nav is fixed and a link is hovered */
+  -webkit-transform: translateZ(0);
 }
 
 
