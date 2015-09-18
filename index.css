@@ -88,7 +88,7 @@
   }
 
   .jol-header__nav {
-    overflow-x: scroll;
+    overflow-x: hidden; /* turn off overflow-x as scrollbar height on desktop causes display issues for offer */
   }
 
 }
