@@ -3,7 +3,7 @@
 
 .jol-header {
   position: relative;
-  height: 40px; /* give it a height so that the page doesn't jump when the sticky header is pulled out */
+  min-height: 40px; /* give it a height so that the page doesn't jump when the sticky header is pulled out */
   z-index: 10;
 }
 
@@ -48,7 +48,7 @@
 @media (max-width: 60em) {
 
   .jol-header {
-    height: 80px; /* give it a height so that the page doesn't jump when the sticky header is pulled out */
+    min-height: 80px; /* give it a height so that the page doesn't jump when the sticky header is pulled out */
   }
 
   .jol-header__content.is-fixed {
@@ -88,7 +88,7 @@
   }
 
   .jol-header__nav {
-    overflow-x: hidden; /* turn off overflow-x as scrollbar height on desktop causes display issues for offer */
+    overflow-x: auto; /* turn off overflow-x as scrollbar height on desktop causes display issues for offer */
   }
 
 }
